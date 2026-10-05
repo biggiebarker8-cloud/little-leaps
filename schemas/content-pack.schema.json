@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Little Leaps content pack",
+  "description": "Shared metadata and screen container for all content packs. Schema validity does not establish child-safety or compliance approval.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "ageBand",
+    "type",
+    "version",
+    "reviewStatus",
+    "screens"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ageBand": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Target age band, such as 7-9. New age bands do not require a schema change."
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Activity type understood by the engine, such as story-choice or matching. Not an exhaustive list."
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Content revision, incremented whenever the pack changes."
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "pending-review",
+        "approved",
+        "rejected"
+      ],
+      "description": "Approved requires actual child-safety/compliance review of this content revision, not internal approval or schema validation."
+    },
+    "screens": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Static screen data. Individual activity types define their screen fields; an empty array is allowed for unfinished packs."
+    }
+  },
+  "additionalProperties": true
+}
