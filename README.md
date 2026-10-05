@@ -62,8 +62,23 @@ collection, or unnecessary personal-data collection.
 
 ## Validation
 
-There is currently no app build, test suite, or automated validation pipeline in
-this repository. Before releasing or adding packs, check that the shared schema
-is valid Draft 2020-12 JSON Schema and validate every JSON file under `packs/`
-against it. Also apply activity-specific checks and the actual safety-review
-process described above; schema validation alone is not release approval.
+With Python 3.12 installed, run from the repository root:
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-dev.txt
+python scripts/validate_packs.py
+python -m unittest discover -s tests
+```
+
+The validator checks that the shared schema is valid Draft 2020-12 JSON Schema
+and validates every JSON file recursively under `packs/`. It exits nonzero for
+invalid packs, malformed JSON, an invalid schema, or no packs. GitHub Actions
+runs validation and regression tests on every pull request and push to `main`;
+invalid packs fail CI. The only direct development dependency is `jsonschema`;
+there is no app build or runtime service.
+
+Also apply activity-specific checks and the actual safety-review process
+described above; schema validation alone is not release approval and does not
+change a pack's version or review status.
