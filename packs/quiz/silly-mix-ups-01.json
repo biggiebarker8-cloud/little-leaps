@@ -1,0 +1,146 @@
+{
+  "id": "silly-mix-ups-01",
+  "title": "What's the Silly Mix-Up?",
+  "ageBand": "4-7",
+  "type": "quiz",
+  "version": 1,
+  "reviewStatus": "draft",
+  "quizPlan": {
+    "instructions": "Listen to each question and choose the silly mix-up.",
+    "interaction": {
+      "choicesPerQuestion": 3,
+      "allowRetry": true,
+      "onCorrect": "Give kind, encouraging feedback and explain the answer simply.",
+      "onIncorrect": "Invite the child to try again without losing a turn or points.",
+      "useTimer": false,
+      "useScore": false
+    }
+  },
+  "screens": [
+    {
+      "id": "fish-facts",
+      "prompt": "Which sentence is the silly mix-up?",
+      "choices": [
+        {
+          "id": "fish-water",
+          "text": "A fish swims in water.",
+          "symbol": "🐟"
+        },
+        {
+          "id": "fish-fins",
+          "text": "A fish has fins.",
+          "symbol": "🐠"
+        },
+        {
+          "id": "fish-bike",
+          "text": "A fish rides a bicycle to school.",
+          "symbol": "🚲"
+        }
+      ],
+      "correctChoiceId": "fish-bike",
+      "correctFeedback": "You found the silly mix-up! Fish swim; they don't ride bikes.",
+      "hint": "Think about how a fish moves around.",
+      "completionMessage": "Nice thinking!"
+    },
+    {
+      "id": "bird-facts",
+      "prompt": "What does not belong in a bird picture?",
+      "choices": [
+        {
+          "id": "bird-feathers",
+          "text": "Feathers",
+          "symbol": "🪶"
+        },
+        {
+          "id": "bird-beak",
+          "text": "A beak",
+          "symbol": "🐦"
+        },
+        {
+          "id": "bird-wheels",
+          "text": "Four wheels",
+          "symbol": "🛞"
+        }
+      ],
+      "correctChoiceId": "bird-wheels",
+      "correctFeedback": "That's right! Birds have feathers and beaks, not wheels.",
+      "hint": "Look for the thing a bird would not have on its body.",
+      "completionMessage": "You spotted it!"
+    },
+    {
+      "id": "rainy-day",
+      "prompt": "It's raining. Which thing will not help you stay dry?",
+      "choices": [
+        {
+          "id": "rain-umbrella",
+          "text": "An umbrella",
+          "symbol": "☂️"
+        },
+        {
+          "id": "rain-boots",
+          "text": "Rain boots",
+          "symbol": "👢"
+        },
+        {
+          "id": "rain-pillow",
+          "text": "A pillow",
+          "symbol": "🛏️"
+        }
+      ],
+      "correctChoiceId": "rain-pillow",
+      "correctFeedback": "Good spotting! A pillow is for resting, not for keeping dry in the rain.",
+      "hint": "Which thing is usually for resting your head?",
+      "completionMessage": "Great job!"
+    },
+    {
+      "id": "clock-facts",
+      "prompt": "Which sentence is not right?",
+      "choices": [
+        {
+          "id": "clock-time",
+          "text": "A clock tells the time.",
+          "symbol": "🕒"
+        },
+        {
+          "id": "clock-hands",
+          "text": "Some clocks have hands.",
+          "symbol": "🕰️"
+        },
+        {
+          "id": "clock-eat",
+          "text": "A clock eats an apple for lunch.",
+          "symbol": "🍎"
+        }
+      ],
+      "correctChoiceId": "clock-eat",
+      "correctFeedback": "You got it! A clock can tell time, but it doesn't eat lunch.",
+      "hint": "Can a clock eat food?",
+      "completionMessage": "Well done!"
+    },
+    {
+      "id": "plant-facts",
+      "prompt": "Which one is the silly mix-up?",
+      "choices": [
+        {
+          "id": "plant-water",
+          "text": "A plant needs water to grow.",
+          "symbol": "💧"
+        },
+        {
+          "id": "plant-sun",
+          "text": "A plant can grow in sunlight.",
+          "symbol": "☀️"
+        },
+        {
+          "id": "plant-shoes",
+          "text": "A plant wears shoes on its feet.",
+          "symbol": "👟"
+        }
+      ],
+      "correctChoiceId": "plant-shoes",
+      "correctFeedback": "That's the mix-up! Plants grow roots, not feet for shoes.",
+      "hint": "Think about what plants have instead of feet.",
+      "completionMessage": "You found all the silly mix-ups!"
+    }
+  ]
+}

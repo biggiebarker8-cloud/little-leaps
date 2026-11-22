@@ -1,0 +1,182 @@
+{
+  "id": "spot-difference-01",
+  "title": "Spot What's Different",
+  "ageBand": "5-7",
+  "type": "spot-difference",
+  "version": 1,
+  "reviewStatus": "draft",
+  "playPlan": {
+    "assetStatus": "illustrations-needed",
+    "instructions": "Look closely at both pictures and tap a spot that looks different.",
+    "imageRequirements": "For each screen, create two same-size versions of the scene. Keep the composition the same and change only the listed details. Do not put words or numbers inside the pictures.",
+    "hotspotCoordinates": "xPercent and yPercent are the center of each difference, measured from the top-left corner of either image.",
+    "interaction": {
+      "showImages": "side-by-side",
+      "tapEitherImage": true,
+      "onFound": "Gently highlight the difference and keep it found.",
+      "onMiss": "Offer a friendly try-again message without a penalty.",
+      "allowHints": true,
+      "useTimer": false,
+      "useLimitedAttempts": false,
+      "progression": "Move to the next scene after all differences are found."
+    }
+  },
+  "screens": [
+    {
+      "id": "picnic",
+      "title": "Picnic Day",
+      "sceneDescription": "A cheerful picnic in a sunny meadow, with a blanket, a basket, and a kite in the sky.",
+      "differences": [
+        {
+          "id": "blanket-shape",
+          "versionA": "The blanket has a green circle in the center.",
+          "versionB": "The blanket has a green star in the center.",
+          "hint": "Look at the middle of the blanket.",
+          "hotspot": {
+            "xPercent": 50,
+            "yPercent": 72,
+            "radiusPercent": 7
+          }
+        },
+        {
+          "id": "kite-bows",
+          "versionA": "The kite tail has two bows.",
+          "versionB": "The kite tail has three bows.",
+          "hint": "Count the bows on the kite's tail.",
+          "hotspot": {
+            "xPercent": 76,
+            "yPercent": 24,
+            "radiusPercent": 7
+          }
+        },
+        {
+          "id": "basket-apples",
+          "versionA": "The basket holds two apples.",
+          "versionB": "The basket holds three apples.",
+          "hint": "Count the apples in the basket.",
+          "hotspot": {
+            "xPercent": 28,
+            "yPercent": 56,
+            "radiusPercent": 8
+          }
+        }
+      ],
+      "completionMessage": "Great looking! You found all three differences."
+    },
+    {
+      "id": "garden",
+      "title": "Garden Visitors",
+      "sceneDescription": "A small garden with a watering can, bright flowers, and a butterfly near the flowers.",
+      "differences": [
+        {
+          "id": "watering-can-color",
+          "versionA": "The watering can is blue.",
+          "versionB": "The watering can is yellow.",
+          "hint": "Look at the color of the watering can.",
+          "hotspot": {
+            "xPercent": 22,
+            "yPercent": 66,
+            "radiusPercent": 8
+          }
+        },
+        {
+          "id": "flower-petals",
+          "versionA": "The tallest flower has five petals.",
+          "versionB": "The tallest flower has six petals.",
+          "hint": "Count the petals on the tallest flower.",
+          "hotspot": {
+            "xPercent": 51,
+            "yPercent": 48,
+            "radiusPercent": 8
+          }
+        },
+        {
+          "id": "butterfly-spots",
+          "versionA": "The butterfly has two spots on its wings.",
+          "versionB": "The butterfly has three spots on its wings.",
+          "hint": "Look closely at the butterfly's wings.",
+          "hotspot": {
+            "xPercent": 77,
+            "yPercent": 35,
+            "radiusPercent": 8
+          }
+        },
+        {
+          "id": "snail-shell",
+          "versionA": "The snail's shell has one spiral stripe.",
+          "versionB": "The snail's shell has two spiral stripes.",
+          "hint": "Look at the snail's shell.",
+          "hotspot": {
+            "xPercent": 68,
+            "yPercent": 77,
+            "radiusPercent": 7
+          }
+        }
+      ],
+      "completionMessage": "You spotted every garden difference!"
+    },
+    {
+      "id": "seaside",
+      "title": "A Day at the Seaside",
+      "sceneDescription": "A calm beach scene with a striped umbrella, a sandcastle, shells, and a friendly crab.",
+      "differences": [
+        {
+          "id": "umbrella-stripes",
+          "versionA": "The umbrella has four stripes.",
+          "versionB": "The umbrella has five stripes.",
+          "hint": "Count the stripes on the umbrella.",
+          "hotspot": {
+            "xPercent": 24,
+            "yPercent": 31,
+            "radiusPercent": 8
+          }
+        },
+        {
+          "id": "sandcastle-flag",
+          "versionA": "The sandcastle has a red flag.",
+          "versionB": "The sandcastle has a blue flag.",
+          "hint": "Look at the little flag on the sandcastle.",
+          "hotspot": {
+            "xPercent": 55,
+            "yPercent": 42,
+            "radiusPercent": 7
+          }
+        },
+        {
+          "id": "shells",
+          "versionA": "There are two shells beside the sandcastle.",
+          "versionB": "There are three shells beside the sandcastle.",
+          "hint": "Count the shells in the sand.",
+          "hotspot": {
+            "xPercent": 73,
+            "yPercent": 76,
+            "radiusPercent": 8
+          }
+        },
+        {
+          "id": "crab-claws",
+          "versionA": "The crab has one claw raised.",
+          "versionB": "The crab has both claws raised.",
+          "hint": "Look at the crab's claws.",
+          "hotspot": {
+            "xPercent": 86,
+            "yPercent": 62,
+            "radiusPercent": 8
+          }
+        },
+        {
+          "id": "beach-ball",
+          "versionA": "The beach ball has a yellow panel.",
+          "versionB": "The beach ball has a green panel.",
+          "hint": "Check the color panels on the beach ball.",
+          "hotspot": {
+            "xPercent": 39,
+            "yPercent": 79,
+            "radiusPercent": 8
+          }
+        }
+      ],
+      "completionMessage": "Fantastic spotting! You found every seaside difference."
+    }
+  ]
+}
