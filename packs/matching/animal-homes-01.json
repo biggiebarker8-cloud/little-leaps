@@ -1,0 +1,72 @@
+{
+  "id": "animal-homes-01",
+  "title": "Animal Homes",
+  "ageBand": "5-7",
+  "type": "matching",
+  "version": 1,
+  "reviewStatus": "draft",
+  "screens": [
+    {
+      "id": "match-the-homes",
+      "title": "Where do they live?",
+      "instructions": "Choose an animal, then choose the home that matches it.",
+      "interaction": {
+        "mode": "one-to-one-pairs",
+        "shuffleRightColumn": true,
+        "onCorrect": "Keep the matched pair together and let the player continue.",
+        "onIncorrect": "Show a gentle try-again message and let the player choose again.",
+        "allowRetry": true,
+        "useTimer": false
+      },
+      "leftLabel": "Animal",
+      "rightLabel": "Home",
+      "pairs": [
+        {
+          "id": "bird-nest",
+          "left": {
+            "text": "Bird",
+            "symbol": "🐦"
+          },
+          "right": {
+            "text": "Nest",
+            "symbol": "🪺"
+          }
+        },
+        {
+          "id": "rabbit-burrow",
+          "left": {
+            "text": "Rabbit",
+            "symbol": "🐇"
+          },
+          "right": {
+            "text": "Burrow",
+            "symbol": "🕳️"
+          }
+        },
+        {
+          "id": "bee-hive",
+          "left": {
+            "text": "Bee",
+            "symbol": "🐝"
+          },
+          "right": {
+            "text": "Hive",
+            "symbol": "🍯"
+          }
+        },
+        {
+          "id": "fish-pond",
+          "left": {
+            "text": "Fish",
+            "symbol": "🐟"
+          },
+          "right": {
+            "text": "Pond",
+            "symbol": "💧"
+          }
+        }
+      ],
+      "completionMessage": "You found a home for every animal!"
+    }
+  ]
+}

@@ -55,6 +55,20 @@ engine update; adding a new `type` value alone does not implement a renderer.
 Future downloadable packs should remain separately distributed static data,
 with their reviewed revision verified before use.
 
+Matching packs use `type: "matching"` and define each screen's instructions,
+one-to-one pairs, and interaction feedback as static data. The engine is
+responsible for rendering the two choices, checking matches, and handling
+retries; this repository does not currently include that engine.
+
+Spot-the-difference packs use `type: "spot-difference"` and describe each
+scene's differences and normalized tap hotspots. Their scene illustrations must
+be created separately; the engine is responsible for showing both images and
+handling taps, hints, and progress.
+
+Quiz packs use `type: "quiz"` and store each question's choices, correct answer,
+and child-friendly feedback as static data. The engine is responsible for
+presenting choices, checking answers, and handling retries.
+
 For now, keep all child-facing content local/static. Do not add a backend,
 remote content fetching, or a download service unless a future feature genuinely
 requires one. Do not add analytics, ads, tracking, chat, accounts, location

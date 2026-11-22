@@ -1,0 +1,153 @@
+{
+  "id": "who-to-tell-01",
+  "title": "Who Can Help?",
+  "ageBand": "4-7",
+  "type": "quiz",
+  "version": 1,
+  "reviewStatus": "draft",
+  "quizPlan": {
+    "instructions": "Practice who you can tell and words you can use to ask for help.",
+    "trustedAdultExamples": [
+      "Parent or caregiver",
+      "Teacher",
+      "School counselor"
+    ],
+    "importantMessage": "If one grown-up cannot help, tell another trusted grown-up. Keep asking until someone helps.",
+    "privacy": "Use pretend situations and choices only. Do not ask the child to type, name, or describe a personal worry.",
+    "interaction": {
+      "choicesPerQuestion": 3,
+      "allowRetry": true,
+      "onCorrect": "Respond calmly and support the child's choice to ask a trusted grown-up for help.",
+      "onIncorrect": "Offer a gentle hint and another try. Never blame or frighten the child.",
+      "useTimer": false,
+      "useScore": false
+    }
+  },
+  "screens": [
+    {
+      "id": "tell-a-teacher",
+      "prompt": "Your tummy hurts at school. Who can you tell?",
+      "choices": [
+        {
+          "id": "tell-teacher",
+          "text": "A teacher",
+          "symbol": "👩‍🏫"
+        },
+        {
+          "id": "tell-toy",
+          "text": "Only a toy",
+          "symbol": "🧸"
+        },
+        {
+          "id": "tell-no-one",
+          "text": "No one",
+          "symbol": "🤐"
+        }
+      ],
+      "correctChoiceId": "tell-teacher",
+      "correctFeedback": "Yes. You can tell your teacher, 'My tummy hurts. Can you help me?'",
+      "hint": "Think of a grown-up at school whose job is to help children.",
+      "completionMessage": "You can ask a grown-up for help."
+    },
+    {
+      "id": "practice-the-words",
+      "prompt": "Something is making you feel worried. What could you say?",
+      "choices": [
+        {
+          "id": "say-help",
+          "text": "I feel worried. Can you help me?",
+          "symbol": "💬"
+        },
+        {
+          "id": "say-nothing",
+          "text": "I must keep it inside.",
+          "symbol": "🤐"
+        },
+        {
+          "id": "say-later",
+          "text": "I should never tell anyone.",
+          "symbol": "🙈"
+        }
+      ],
+      "correctChoiceId": "say-help",
+      "correctFeedback": "Those are good words to start with. A trusted grown-up can listen and help.",
+      "hint": "You can say how you feel and ask for help.",
+      "completionMessage": "It's okay to ask for help."
+    },
+    {
+      "id": "uncomfortable-secret",
+      "prompt": "Someone asks you to keep a secret that makes you feel worried or uncomfortable. What can you do?",
+      "choices": [
+        {
+          "id": "tell-trusted-adult",
+          "text": "Tell a trusted grown-up, even if you were asked not to.",
+          "symbol": "🗣️"
+        },
+        {
+          "id": "keep-worry",
+          "text": "Keep the worry to yourself.",
+          "symbol": "🤐"
+        },
+        {
+          "id": "wait-alone",
+          "text": "Wait and hope it goes away.",
+          "symbol": "⏳"
+        }
+      ],
+      "correctChoiceId": "tell-trusted-adult",
+      "correctFeedback": "That's right. You can tell a trusted grown-up about anything that makes you feel worried or uncomfortable.",
+      "hint": "You are allowed to ask a safe grown-up for help.",
+      "completionMessage": "A trusted grown-up can listen."
+    },
+    {
+      "id": "ask-another-adult",
+      "prompt": "You told a grown-up, but you still need help. What can you do?",
+      "choices": [
+        {
+          "id": "tell-another",
+          "text": "Tell another trusted grown-up, like a teacher or caregiver.",
+          "symbol": "👨‍👩‍👧"
+        },
+        {
+          "id": "stop-asking",
+          "text": "Stop asking for help.",
+          "symbol": "🙊"
+        },
+        {
+          "id": "handle-alone",
+          "text": "Try to fix everything by yourself.",
+          "symbol": "🧒"
+        }
+      ],
+      "correctChoiceId": "tell-another",
+      "correctFeedback": "Yes. Keep telling trusted grown-ups until someone helps. You deserve to be listened to.",
+      "hint": "You can ask another grown-up you trust.",
+      "completionMessage": "Keep asking until someone helps."
+    },
+    {
+      "id": "help-a-friend",
+      "prompt": "A friend says they feel worried. What is a kind way to help?",
+      "choices": [
+        {
+          "id": "go-together",
+          "text": "Offer to go with them to tell a trusted grown-up.",
+          "symbol": "🤝"
+        },
+        {
+          "id": "promise-secret",
+          "text": "Promise to keep every worry secret.",
+          "symbol": "🤫"
+        },
+        {
+          "id": "walk-away",
+          "text": "Tell them to figure it out alone.",
+          "symbol": "🚶"
+        }
+      ],
+      "correctChoiceId": "go-together",
+      "correctFeedback": "That's kind. You can help your friend find a trusted grown-up. You do not have to handle a worry alone.",
+      "hint": "Think of a grown-up who can help both of you.",
+      "completionMessage": "It's always okay to ask a trusted grown-up for help."
+    }
+  ]
+}
